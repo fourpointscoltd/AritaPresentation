@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有田焼 - Arita Ware</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
+    <style>
+        /* iPad横向き最適化 */
+        .reveal {
+            font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        }
+
+        /* 言語切替ボタン */
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            z-index: 100;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+        }
+        .lang-switch a {
+            color: #666;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: all 0.3s;
+        }
+        .lang-switch a:hover {
+            color: #1a1a1a;
+        }
+        .lang-switch .active {
+            color: #1a1a1a;
+            font-weight: 700;
+            border-bottom: 2px solid #c9a227;
+        }
+        .lang-switch .separator {
+            color: #ccc;
+        }
+
+        /* スライドスタイル */
+        .reveal h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: #1a1a1a;
+        }
+        .reveal h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+        .reveal h3 {
+            font-size: 1.2em;
+            font-weight: 400;
+            color: #666;
+            letter-spacing: 0.05em;
+        }
+        .reveal p {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #444;
+        }
+        .reveal ul {
+            font-size: 0.95em;
+            line-height: 2;
+        }
+        .reveal li {
+            margin-bottom: 0.3em;
+        }
+
+        /* 画像スタイル */
+        .reveal img {
+            max-height: 55vh;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        /* タイトルスライド */
+        .title-slide {
+            background: linear-gradient(135deg, #f8f8f6 0%, #eeeee8 100%);
+        }
+        .title-slide h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.3em;
+        }
+        .title-slide .subtitle {
+            font-size: 1.2em;
+            color: #888;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        /* アクセントカラー */
+        .accent {
+            color: #c9a227;
+        }
+        .reveal .gold-line {
+            width: 60px;
+            height: 2px;
+            background: #c9a227;
+            margin: 20px auto;
+        }
+
+        /* 2カラムレイアウト */
+        .two-column {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        .two-column .text {
+            flex: 1;
+            text-align: left;
+        }
+        .two-column .image {
+            flex: 1;
+        }
+
+        /* 特徴リスト */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+        .feature-item h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature-item p {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .feature-number {
+            font-size: 2.5em;
+            font-weight: 200;
+            color: #c9a227;
+            margin-bottom: 10px;
+        }
+
+        /* 進行インジケーター */
+        .reveal .progress {
+            height: 3px;
+            background: #c9a227;
+        }
+
+        /* ナビゲーション矢印 */
+        .reveal .controls {
+            color: #c9a227;
+        }
+    </style>
+</head>
+<body>
+    <!-- 言語切替 -->
+    <div class="lang-switch">
+        <a href="../jp/" class="active">JP</a>
+        <span class="separator">|</span>
+        <a href="../en/">EN</a>
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- スライド1: タイトル -->
+            <section class="title-slide">
+                <h1>有田焼</h1>
+                <div class="gold-line"></div>
+                <p class="subtitle">Arita Ware</p>
+                <p style="margin-top: 40px; font-size: 0.9em; color: #888;">日本磁器の原点、400年の歴史</p>
+            </section>
+
+            <!-- スライド2: 有田焼とは -->
+            <section>
+                <div class="two-column">
+                    <div class="text">
+                        <h2>有田焼とは</h2>
+                        <div class="gold-line" style="margin: 20px 0;"></div>
+                        <p>
+                            有田焼は、佐賀県有田町で生産される<br>
+                            <strong class="accent">日本最古の磁器</strong>です。
+                        </p>
+                        <p style="margin-top: 20px;">
+                            1616年、朝鮮人陶工・李参平が<br>
+                            泉山で磁石を発見したことから始まりました。
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../images/aritayaki.jpg" alt="有田焼">
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド3: 特徴 -->
+            <section>
+                <h2>有田焼の特徴</h2>
+                <div class="gold-line"></div>
+                <div class="feature-grid" style="margin-top: 50px;">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <h4>透き通る白磁</h4>
+                        <p>純白で透明感のある<br>美しい肌合い</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <h4>繊細な絵付け</h4>
+                        <p>染付・色絵・金彩など<br>多彩な技法</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <h4>耐久性</h4>
+                        <p>硬質で傷がつきにくく<br>日常使いに最適</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド4: 様式 -->
+            <section>
+                <div class="two-column">
+                    <div class="image">
+                        <img src="../images/aritayaki2.jpg" alt="有田焼の様式">
+                    </div>
+                    <div class="text">
+                        <h2>代表的な様式</h2>
+                        <div class="gold-line" style="margin: 20px 0;"></div>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><span class="accent">■</span> <strong>古伊万里</strong> - 江戸時代の輸出磁器</li>
+                            <li><span class="accent">■</span> <strong>柿右衛門</strong> - 余白を活かした優美な色絵</li>
+                            <li><span class="accent">■</span> <strong>鍋島</strong> - 藩窯の最高級品</li>
+                            <li><span class="accent">■</span> <strong>金襴手</strong> - 豪華絢爛な金彩装飾</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド5: 歴史 -->
+            <section>
+                <h2>400年の歴史</h2>
+                <div class="gold-line"></div>
+                <div style="display: flex; justify-content: center; gap: 30px; margin-top: 40px; font-size: 0.85em;">
+                    <div style="text-align: center; padding: 20px;">
+                        <p class="accent" style="font-size: 1.5em; font-weight: 300;">1616</p>
+                        <p>日本初の磁器<br>生産開始</p>
+                    </div>
+                    <div style="color: #ccc; font-size: 2em; align-self: center;">→</div>
+                    <div style="text-align: center; padding: 20px;">
+                        <p class="accent" style="font-size: 1.5em; font-weight: 300;">1650〜</p>
+                        <p>ヨーロッパへ<br>大量輸出</p>
+                    </div>
+                    <div style="color: #ccc; font-size: 2em; align-self: center;">→</div>
+                    <div style="text-align: center; padding: 20px;">
+                        <p class="accent" style="font-size: 1.5em; font-weight: 300;">現代</p>
+                        <p>伝統と革新の<br>融合</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド6: 現代の有田焼 -->
+            <section>
+                <div class="two-column">
+                    <div class="text">
+                        <h2>現代の有田焼</h2>
+                        <div class="gold-line" style="margin: 20px 0;"></div>
+                        <p>
+                            伝統技術を継承しながら、<br>
+                            現代のライフスタイルに合わせた<br>
+                            <strong class="accent">モダンなデザイン</strong>も展開。
+                        </p>
+                        <p style="margin-top: 20px;">
+                            世界的なデザイナーとのコラボレーションや<br>
+                            新しい釉薬・形状の開発も進んでいます。
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="../images/aritayaki3.jpg" alt="現代の有田焼">
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド7: 窯元紹介 -->
+            <section>
+                <h2>代表的な窯元</h2>
+                <div class="gold-line"></div>
+                <div class="feature-grid" style="margin-top: 40px;">
+                    <div class="feature-item">
+                        <h4>香蘭社</h4>
+                        <p>1879年創業<br>皇室御用達の名窯</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>深川製磁</h4>
+                        <p>1894年創業<br>宮内庁御用達</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>今右衛門</h4>
+                        <p>色鍋島の伝統<br>人間国宝を輩出</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スライド8: お問い合わせ -->
+            <section class="title-slide">
+                <h2>ご質問・お問い合わせ</h2>
+                <div class="gold-line"></div>
+                <p style="margin-top: 30px; font-size: 1.1em;">
+                    有田焼の詳細について<br>
+                    お気軽にお尋ねください
+                </p>
+                <img src="../images/unnamed.jpg" alt="有田焼" style="margin-top: 30px; max-height: 35vh;">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            touch: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide',
+            width: 1194,  // iPad Pro横向き
+            height: 834,
+        });
+    </script>
+</body>
+</html>
