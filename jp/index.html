@@ -303,9 +303,50 @@
             right: 30px;
             bottom: 20px;
         }
+
+        /* YouTube背景 */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .video-background iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 180%;
+            height: 180%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+    <!-- YouTube背景動画 -->
+    <div class="video-background">
+        <iframe
+            src="https://www.youtube.com/embed/P-J-127jEIE?autoplay=1&mute=1&loop=1&playlist=P-J-127jEIE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-overlay"></div>
+
     <!-- 言語切替 -->
     <div class="lang-switch">
         <a href="../jp/" class="active">JP</a>
@@ -316,8 +357,8 @@
     <div class="reveal">
         <div class="slides">
 
-            <!-- 1. タイトル -->
-            <section class="full-bg center-dark" data-background-image="../images/aritayaki.jpg">
+            <!-- 1. タイトル（動画背景を使用） -->
+            <section data-background-color="transparent">
                 <div class="content-box center" style="padding-top: 15%;">
                     <p style="font-size: 0.9em; letter-spacing: 0.4em; color: var(--gold-light); margin-bottom: 20px;">JAPANESE PORCELAIN</p>
                     <h1>有田焼</h1>
